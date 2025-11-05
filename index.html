@@ -799,6 +799,52 @@
             }
         }
         
+        /* Tablet styles (768px to 1024px) */
+        @media (max-width: 1024px) and (min-width: 769px) {
+            .content-wrapper {
+                padding: 70px 50px;
+            }
+            
+            .main-title {
+                font-size: 3.5rem;
+                letter-spacing: 2px;
+            }
+            
+            .graduate-showcase {
+                gap: 40px;
+            }
+            
+            .photo-frame-luxury {
+                max-width: 300px;
+            }
+            
+            .graduate-name {
+                font-size: 2.5rem;
+            }
+            
+            .event-grid {
+                gap: 30px;
+            }
+            
+            .event-card {
+                padding: 35px;
+            }
+            
+            .event-card h3 {
+                font-size: 1.8rem;
+            }
+            
+            .rsvp-section {
+                padding: 50px 30px;
+            }
+            
+            .luxury-button {
+                padding: 18px 50px;
+                font-size: 1rem;
+            }
+        }
+        
+        /* Mobile and small tablet styles */
         @media (max-width: 768px) {
             .ribbon-banner {
                 width: 80px;
@@ -818,16 +864,36 @@
             
             .main-title {
                 font-size: 2.5rem;
+                letter-spacing: 1.5px;
+            }
+            
+            .subtitle {
+                font-size: 1.2rem;
+                letter-spacing: 1px;
             }
             
             .graduate-showcase {
                 grid-template-columns: 1fr;
                 gap: 40px;
+                text-align: center;
+            }
+            
+            .photo-frame-luxury {
+                max-width: 280px;
             }
             
             .event-grid {
                 grid-template-columns: 1fr;
                 gap: 30px;
+            }
+            
+            .event-card {
+                padding: 30px 25px;
+            }
+            
+            .event-card h3 {
+                font-size: 1.6rem;
+                justify-content: center;
             }
             
             .corner-ornament {
@@ -854,11 +920,14 @@
             .button-group {
                 flex-direction: column;
                 align-items: center;
+                gap: 20px;
             }
             
             .luxury-button {
                 width: 100%;
                 max-width: 300px;
+                padding: 16px 40px;
+                font-size: 0.95rem;
             }
             
             .badge-luxury {
@@ -874,35 +943,181 @@
             }
             
             .info-section {
-                padding: 30px;
+                padding: 30px 20px;
+                border-left: none;
+                border: 2px solid var(--lilac);
+            }
+            
+            .info-section::before {
+                display: none;
+            }
+            
+            .countdown-section {
+                gap: 15px;
             }
             
             .countdown-box {
-                padding: 20px 25px;
-                min-width: 80px;
+                padding: 20px 20px;
+                min-width: 70px;
             }
             
             .countdown-number {
                 font-size: 2rem;
             }
-        }
-        
-        @media (max-width: 480px) {
-            .main-title {
+            
+            .map-placeholder {
+                height: 250px;
+                font-size: 1.1rem;
+            }
+            
+            .rsvp-section {
+                padding: 40px 20px;
+                margin: 40px 0;
+            }
+            
+            .rsvp-title {
                 font-size: 2rem;
             }
             
-            .subtitle {
+            .message-box {
+                padding: 30px 20px;
+                margin: 40px auto;
                 font-size: 1.1rem;
+            }
+            
+            .message-box::before,
+            .message-box::after {
+                font-size: 3rem;
+            }
+            
+            .footer-section p {
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+        }
+        
+        /* Small phone styles */
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
             }
             
             .content-wrapper {
                 padding: 40px 20px;
             }
             
+            .main-title {
+                font-size: 2rem;
+                letter-spacing: 1px;
+            }
+            
+            .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .ornamental-line i {
+                font-size: 1.2rem;
+                margin: 0 15px;
+            }
+            
+            .countdown-section {
+                gap: 10px;
+            }
+            
+            .countdown-box {
+                padding: 15px 15px;
+                min-width: 60px;
+            }
+            
+            .countdown-number {
+                font-size: 1.5rem;
+            }
+            
+            .countdown-label {
+                font-size: 0.8rem;
+            }
+            
+            .graduate-showcase {
+                gap: 30px;
+            }
+            
+            .photo-frame-luxury {
+                max-width: 250px;
+            }
+            
+            .graduate-name {
+                font-size: 1.8rem;
+            }
+            
+            .info-item {
+                font-size: 1rem;
+                margin: 15px 0;
+                justify-content: center;
+            }
+            
+            .info-item i {
+                width: 30px;
+                font-size: 1.1rem;
+                margin-right: 10px;
+            }
+            
+            .event-card {
+                padding: 25px 20px;
+            }
+            
+            .event-card h3 {
+                font-size: 1.4rem;
+                gap: 10px;
+            }
+            
+            .event-card p {
+                font-size: 1rem;
+                margin: 10px 0;
+            }
+            
+            .map-placeholder {
+                height: 200px;
+                font-size: 1rem;
+            }
+            
+            .map-placeholder i {
+                font-size: 1.5rem;
+                margin-right: 10px;
+            }
+            
+            .rsvp-title {
+                font-size: 1.8rem;
+                margin-bottom: 30px;
+            }
+            
+            .luxury-button {
+                padding: 14px 30px;
+                font-size: 0.9rem;
+            }
+            
             .message-box {
                 font-size: 1rem;
-                padding: 30px 20px;
+                padding: 25px 15px;
+                margin: 30px auto;
+            }
+            
+            .message-box::before,
+            .message-box::after {
+                font-size: 2.5rem;
+                top: -15px;
+                left: 10px;
+                bottom: -15px;
+                right: 10px;
+            }
+            
+            .footer-section {
+                padding-top: 30px;
+                margin-top: 40px;
+            }
+            
+            .footer-section p {
+                font-size: 0.95rem;
+                margin: 12px 0;
             }
         }
     </style>
