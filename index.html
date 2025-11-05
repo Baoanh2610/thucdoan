@@ -303,7 +303,7 @@
             grid-template-columns: 1fr 1.5fr;
             gap: 50px;
             margin: 60px 0;
-            align-items: center;
+            align-items: start;
         }
         
         .photo-section {
@@ -313,7 +313,6 @@
         .photo-frame-luxury {
             width: 100%;
             max-width: 400px;
-            aspect-ratio: 1;
             position: relative;
             margin: 0 auto;
         }
@@ -321,7 +320,7 @@
         .photo-inner {
             position: relative;
             width: 100%;
-            height: 100%;
+            height: auto;
             overflow: hidden;
             border-radius: 15px;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
@@ -330,8 +329,8 @@
         
         .photo-inner img {
             width: 100%;
-            height: 100%;
-            object-fit: contain;
+            height: auto;
+            display: block;
             transition: transform 0.5s ease;
         }
         
@@ -937,19 +936,19 @@
                     
                     <div class="countdown-section">
                         <div class="countdown-box">
-                            <div class="countdown-number" id="days">00</div>
+                            <div class="countdown-number" id="days">09</div>
                             <div class="countdown-label">Ngày</div>
                         </div>
                         <div class="countdown-box">
-                            <div class="countdown-number" id="hours">00</div>
+                            <div class="countdown-number" id="hours">11</div>
                             <div class="countdown-label">Giờ</div>
                         </div>
                         <div class="countdown-box">
-                            <div class="countdown-number" id="minutes">00</div>
+                            <div class="countdown-number" id="minutes">56</div>
                             <div class="countdown-label">Phút</div>
                         </div>
                         <div class="countdown-box">
-                            <div class="countdown-number" id="seconds">00</div>
+                            <div class="countdown-number" id="seconds">20</div>
                             <div class="countdown-label">Giây</div>
                         </div>
                     </div>
